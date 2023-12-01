@@ -5,7 +5,7 @@
 
 스마트 컨트렉트: 특정 계약을 스스로수립, 검증, 이행하기위한 컴퓨터 프로토콜
 
-Answer.sol
+<Answer.sol>
 pragma solidity ^0.8.21;contract Answer {
  uint answer;function setAnswer(uint _answer) public {
   answer = _answer;
@@ -15,7 +15,7 @@ pragma solidity ^0.8.21;contract Answer {
  }
 }
 
-deploy.js
+<deploy.js>
 module.exports = function(_deployer) {
   // Use deployer to state migration tasks.
   var Answer = artifacts.require("Answer");module.exports = function(deployer) {
@@ -23,7 +23,7 @@ module.exports = function(_deployer) {
    };
 };
 
-test.js
+<test.js>
 pragma solidity ^0.8.21;import "truffle/Assert.sol";
 import "truffle/DeployedAddresses.sol";
 import "../contracts/Answer.sol";contract TestAnswer {
